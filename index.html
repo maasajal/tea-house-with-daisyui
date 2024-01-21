@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House!</title>
+    <!-- Tailwind css and daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/a24f44dc67.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tailwind Custom colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gradient-start": "#FF8938",
+              "gradient-end": "#F00",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="my-6 lg:my-20">
+        <div
+          class="flex justify-between items-center flex-col lg:flex-row p-12"
+        >
+          <div>
+            <h1 class="text-4xl lg:text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white"
+            >
+              Explore More
+              <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+            </button>
+          </div>
+          <div>
+            <img src="/images/banner.png" />
+            <!-- ratings badge -->
+            <div
+              class="-mt-16 ml-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60"
+            >
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div>
+                <h3 class="text-3xl font-extrabold">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto"></main>
+    <footer>
+      <div class="container mx-auto"></div>
+    </footer>
+  </body>
+</html>
