@@ -33,6 +33,9 @@
             colors: {
               "gradient-start": "#FF8938",
               "gradient-end": "#F00",
+              feature: "#F4F4F4",
+              "feature-start": "#F4F4F4",
+              "feature-end": "#F4F4F4",
             },
           },
         },
@@ -83,7 +86,59 @@
         </div>
       </div>
     </header>
-    <main class="container mx-auto"></main>
+    <main class="container mx-auto">
+      <section class="text-center m-8 lg:my-28">
+        <h2 class="text-5xl font-extrabold">Our Featured Products</h2>
+        <p class="font-bold text-[#777] max-w-2xl mx-auto leading-7 my-5">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+        <!-- card container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-8">
+          <!-- first card -->
+          <div class="card bg-feature">
+            <figure class="px-10 pt-10">
+              <img src="./images/tea-1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Milk Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="card bg-feature">
+            <figure class="px-10 pt-10">
+              <img src="./images/tea-2.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Black Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="card bg-feature">
+            <figure class="px-10 pt-10">
+              <img src="./images/tea-3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Lemon Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="card bg-feature">
+            <figure class="px-10 pt-10">
+              <img src="./images/tea-4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Green Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="container mx-auto"></div>
     </footer>
