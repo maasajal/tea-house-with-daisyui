@@ -35,7 +35,12 @@
               "gradient-end": "#F00",
               feature: "#F4F4F4",
               "feature-start": "#F4F4F4",
-              "feature-end": "#F4F4F4",
+              "feature-end": "#FFFFFF",
+              "tea-gra-start": "#D9D9D9",
+              "tea-gra-end": "#FFFFFF",
+              "fresh-1": "#E6A623",
+              "fresh-2": "#574E27",
+              p: "#777", // paragraph-color
             },
           },
         },
@@ -100,7 +105,7 @@
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-8"
         >
           <!-- first card -->
-          <div class="card bg-feature">
+          <div class="card bg-gradient-to-b from-tea-gra-start to-tea-gra-end">
             <figure class="px-10 pt-10">
               <img src="./images/tea-1.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -110,7 +115,7 @@
             </div>
           </div>
           <!-- second card -->
-          <div class="card bg-feature">
+          <div class="card bg-gradient-to-b from-tea-gra-start to-tea-gra-end">
             <figure class="px-10 pt-10">
               <img src="./images/tea-2.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -120,7 +125,7 @@
             </div>
           </div>
           <!-- third card -->
-          <div class="card bg-feature">
+          <div class="card bg-gradient-to-b from-tea-gra-start to-tea-gra-end">
             <figure class="px-10 pt-10">
               <img src="./images/tea-3.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -130,7 +135,7 @@
             </div>
           </div>
           <!-- fourth card -->
-          <div class="card bg-feature">
+          <div class="card bg-gradient-to-b from-tea-gra-start to-tea-gra-end">
             <figure class="px-10 pt-10">
               <img src="./images/tea-4.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -141,8 +146,48 @@
           </div>
         </div>
       </section>
+      <!-- Great Tea, Freshly Presented -->
+      <section class="lg:my-28 my-24 flex gap-12 flex-col lg:flex-row p-8">
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
+          <div
+            class="rounded-xl h-36 bg-gradient-to-r from-red-100 to-amber-100"
+          ></div>
+          <div
+            class="row-span-2 bg-[#E6A6231A] rounded-lg flex justify-center items-center px-8 py-12"
+          >
+            <img src="./images/fresh-1.png" alt="fresh" />
+          </div>
+          <div
+            class="row-span-2 bg-[#5776391A] rounded-lg flex justify-center items-center px-8 py-12"
+          >
+            <img src="./images/fresh-2.png" alt="fresh" />
+          </div>
+          <div
+            class="rounded-xl h-36 bg-gradient-to-r from-tea-gra-start to-tea-gra-end"
+          ></div>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-5xl font-extrabold">Great Tea, Freshly Presented</h2>
+          <p class="text-p max-w-2xl leading-7 my-5">
+            The meaning of gong cha is chanese is to provide the best tea to
+            emperor from all possessions . It represents the highest quality and
+            self expectation. Establishing in 2006, Gong cha had been deeply
+            appreciated by its custoers because of good words of mouth and
+            unique customized service orginated from Taiwan.
+          </p>
+          <h4 class="text-2xl font-extrabold">Unique Taste</h4>
+          <p class="text-p max-w-2xl leading-7 my-5">
+            A Unique and different style from other teapots gives a luxurious
+            and minimalist impression
+          </p>
+          <h4 class="text-2xl font-extrabold">Premium Quality</h4>
+          <p class="text-p max-w-2xl leading-7 my-5">
+            Premium Quality that makes tea more elegant and more durable when
+            you use it.
+          </p>
+        </div>
+      </section>
       <!-- News & Events -->
-
       <section class="m-8 lg:my-28">
         <h2 class="text-5xl font-extrabold text-center">News & Events</h2>
         <p
@@ -154,11 +199,11 @@
         </p>
         <!-- card container -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-8"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-8"
         >
           <!-- first card -->
           <div class="card card-compact bg-base-100 border-2 p-4">
-            <figure>
+            <figure class="mt-4">
               <img src="./images/news-1.png" alt="news-2" />
             </figure>
             <div class="card-body">
@@ -174,7 +219,7 @@
           </div>
           <!-- second card -->
           <div class="card card-compact bg-base-100 border-2 p-4">
-            <figure>
+            <figure class="mt-4">
               <img src="./images/news-2.png" alt="news-2" />
             </figure>
             <div class="card-body">
@@ -190,7 +235,7 @@
           </div>
           <!-- third card -->
           <div class="card card-compact bg-base-100 border-2 p-4">
-            <figure>
+            <figure class="mt-4">
               <img src="./images/news-3.png" alt="news-2" />
             </figure>
             <div class="card-body">
